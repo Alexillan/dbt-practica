@@ -53,4 +53,15 @@ section_department as (
         department_name
     from 'proyecto-dbt-463511.Dataset_practica_dbt.Articulos'
 
+),
+
+articles as (
+    select
+        article_id,
+        detail_desc,
+        ifnull(product_code, -1) as product_code,
+        ifnull(index_code, '-1') as index_code,
+        ifnull(department_no, -1) as department_no,
+        ifnull(product_type_no, -1) as product_type_no
+    from 'proyecto-dbt-463511.Dataset_practica_dbt.Articulos'
 )
