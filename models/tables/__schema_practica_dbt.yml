@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: articulos
+    columns: 
+      - name: article_id
+        tests:
+          - unique
+          - not_null
+
+  - name: clientes
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+  - name: uszip2
+    columns: 
+      - name: zip
+        tests:
+          - unique
+          - not_null
+
+  - name: transacciones
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+      

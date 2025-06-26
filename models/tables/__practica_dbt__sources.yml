@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: practica_dbt
+    database: Dataset_practica_dbt
+    schema: practica_dbt
+    tables:
+      - name: clientes
+      - name: articulos
+      - name: uszips2
+      - name: transacciones
+      
