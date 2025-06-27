@@ -1,0 +1,21 @@
+
+version: 2
+
+models:
+    - name: stg_dim_club_memmber_status
+      description: "Estado de los clientes"
+      columns:
+          - name: customer_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: stg_dim_costumer_age
+      description: "Tabla de edades"
+      columns:
+          - name: customer_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
